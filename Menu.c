@@ -1,10 +1,15 @@
 #include <stdio.h>
 
- void introduccion();
+void introduccion();
  void juego1();
  void snake();
+ void texto1 ();
  void ahorcado();
+ void texto2 ();
  void coches();
+ void texto3 ();
+ void texto4 ();
+
 
 
 int main()
@@ -65,6 +70,15 @@ int main()
                 case 2://Jugar
                 elegir=0;
                 printf("Eres un detective en colombia.");
+               introduccion();
+     juego1();
+    texto1();
+     snake();
+    texto2();
+     ahorcado();
+    texto3()
+     coches();
+    texto4();
 
                 break;
 
@@ -103,6 +117,15 @@ int main()
                 case 2://Jugar
                 elegir=0;
                 printf("Eres un detective en colombia.");
+               introduccion();
+     juego1();
+    texto1();
+     snake();
+    texto2();
+     ahorcado();
+    texto3()
+     coches();
+    texto4();
                 break;
 
             }
@@ -258,4 +281,34 @@ int main()
  void coches(){
      
  }
+void texto1 ()
+ {
+     printf("El barco se ha empezado a hundir mas rápido de lo que la flota y los tripulantes pensaban y al abrir los ojos, te encuentras que la marea te ha llevado a una isla desierta\n");
+     printf("Lo primero que sientes es la boca seca, y una sensacion de hambre desmesurada\n");
+     printf("*pensamiento interno* Tengo que buscar algo de comer si quiero sobrevivir\n");
+     printf("Sin saber como, te ves convertido en serpiente, crees que es por las horas sin comer o el cansancio\n");
+ }
+ void texto2()
+ {
+     printf ("Con el estomago lleno y tropecientos cocos comidos se ven las cosas de otra manera, pero sientes que te invade una sensacion de agobio al no ver a nadie\n");
+     printf("Echas a andar y despues de varios kilometros, empiezas a oir voces y canticos de humanos\n");
+     printf("Cual es tu sorpresa cuando te acercas y ves una tribu indigena\n");
+     printf("*pensamiento interno* ¿Voy hacia ellos? ¿Me alejo? Ire\n");
+     printf("Indigena 1:si quieres pertener a nuestra tribu deberás pasar la prueba DIOSA");
+     
+ }
+ void texto3 ()
+ {
+     printf("Ya eres una celebridad para ellos, y te tratan como uno de sus reyes.\n");
+     printf("Decides dar un paseo para conocer mejor la isla\n");
+     printf("*pensamiento interno* ¿QUE?¿ESCUCHO UN MOTOR?No puede ser\n");
+     printf("Te acercas a donde proviene el ruido y tus ojos no dan credito a lo que ven: UN COCHE\n");
+     printf("Es tu oportunidad para salir de ahi\n");
+     printf("Llegas al coche y adios a esta isla infernal\n");
+ }
+ void texto4 ()
+ {
+     printf ("ADIOS LATAM\n");
+ }
+
 
