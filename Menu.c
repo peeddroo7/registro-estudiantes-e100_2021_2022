@@ -1,6 +1,162 @@
 #include <stdio.h>
 
-void introduccion(printf("^ANYO 2017^\n");
+
+void introduccion();
+void juego1();
+ void snake();
+ void texto1 ();
+ void ahorcado();
+ void texto2 ();
+ void coches();
+ void texto3 ();
+ void texto4 ();
+
+
+
+int main()
+{
+    char a;
+    char b;
+    char usuario [30];
+    char contrase [30];
+    FILE *iniciosesion;
+     char nombre [30];
+    int fecha ;
+    FILE *iniciosesionfecha;
+     char registronombre [30];
+    char contrasena[30] ;
+    FILE *registro;
+    int elegir;
+    elegir=0;
+    printf("Elige entre las opciones introduciendo el numero de delante\n");
+    printf("1 Iniciar sesion con el email \n ");
+    printf("2 Iniciar sesion con fecha y nombre \n");
+    printf("3 Registrarse\n");
+    printf("Opcion:");
+    scanf("%i", &elegir);
+    switch (elegir)
+    {
+    case 1://Iniciar sesion
+
+
+    iniciosesion=fopen ("INICIOSESION.txt", "a");
+    printf ("introduzca su usuario\n");
+    scanf ("%s", usuario);
+    printf("introduzca su contrasena\n");
+    scanf ("%s", contrase);
+    fprintf (iniciosesion, "USUARIO\n CONTRASEÑA\t");
+    fprintf(iniciosesion, "%s\n", usuario);
+    fprintf(iniciosesion, "%s", contrase);
+
+    fclose (iniciosesion);
+
+    printf("¿Que quieres hacer? \n");
+    printf("1 Salir. \n");
+    printf("2 Jugar. \n");
+    
+    scanf("%i", &elegir);
+
+
+            switch (elegir)
+                {
+                case 1://Salir
+                elegir=0;
+
+                break;
+
+                case 2://Jugar
+                elegir=0;
+                printf("Eres un detective en colombia.");
+               introduccion();
+     juego1();
+    texto1();
+     snake();
+    texto2();
+     ahorcado();
+    texto3();
+     coches();
+    texto4();
+
+                break;
+
+
+            }
+            break;
+
+            case 2:
+
+
+    iniciosesionfecha=fopen ("INICIOSESIONfecha.txt", "a");
+    printf ("introduzca su nombre\n");
+    scanf ("%s", nombre);
+    printf("introduzca su fecha de nacimiento sin guiones ni espacios (diamesaño)\n");
+    scanf ("%s", fecha);
+    fprintf (iniciosesionfecha, "USUARIO\n FECHA\t");
+    fprintf(iniciosesionfecha, "%s\n", nombre);
+    fprintf(iniciosesionfecha, "%i", fecha);
+
+    fclose (iniciosesionfecha);
+            //Se supone que aquí te lo verifica y tal pero es con ficheros y no se jajaja
+            printf("¿Que quieres hacer? \n");
+            printf("1 Salir. \n");
+            printf("2 Jugar. \n");
+
+            scanf("%i", &elegir);
+
+
+            switch (elegir)
+                {
+                case 1://Salir
+                elegir=0;
+
+                break;
+
+                case 2://Jugar
+                elegir=0;
+                printf("Eres un detective en colombia.");
+               introduccion();
+     juego1();
+    texto1();
+     snake();
+    texto2();
+     ahorcado();
+    texto3();
+     coches();
+    texto4();
+                break;
+
+            }
+        break;
+
+
+    case 3://Registrarse
+    elegir=0;
+    printf ("Registarse\n");
+
+    registro=fopen ("Registro.txt", "a");
+    printf ("introduzca su nombre\n");
+    scanf ("%s", registronombre);
+    printf("introduzca contraseña\n");
+    scanf ("%s", contrasena);
+    fprintf (registro, "USUARIO\n CONTRASEÑA\t");
+    fprintf(registro, "%s\n", registro);
+    fprintf(registro, "%i", contrasena);
+
+    fclose (registro);
+    return 0;
+
+
+}
+    }
+ void introduccion(){
+ int primero;
+	int puerta;
+	int salida;
+	int operacion, operacion2, operacion3;
+	int a,b,c,d;
+	
+	
+	printf("^ANYO 2017^\n");
 	printf("Mi nombre es Sven, naci en Noruega en 1986. Estudie en la Universidad Politecnica de Madrid, donde curse\n");
 	printf("ingenieria industrial. Despues de 7 largos anyos suspendiendo mas que aprobando, logre graduarme y entrar en una empresa\n");
 	printf("Tras unos cuantos años trabajando alli, decidi cambiar mi vida\n");
@@ -8,8 +164,19 @@ void introduccion(printf("^ANYO 2017^\n");
 	printf("donde espero encontrar un buen trabajo y formar una bonita familia.Mi destino es Estados Unidos por la pasion\n");
 	printf(" que tenia mi madre por su vieja Colorado.Aun recuerdo esas calidas tardes donde me contaba sus anecdotas. Como la echo de menos\n");
 	printf("*AL DIA SIGUIENTE* ¡QUE HA SIDO ESO!Ha sonado un fuerte estruendo, como si hubiera habido un impacto contra algo.       *MEGAFONIA:ATENCION A TODOS LOS PASAJEROS\n");
-	printf("HA HABIDO UN PERCANCE, ESTAMOS INTENTANDO REPARARLO, QUE NO CUNDA EL PANICO.* Vale, necesito subir a cubierta para ver  que esta pasando. Hay tres puertas, sin ningun cartel\n"););
- void juego1(	printf("¿Cual de todas las puertas sera? *Introduce numero de puerta, de la 1 a la 3*\n");
+	printf("HA HABIDO UN PERCANCE, ESTAMOS INTENTANDO REPARARLO, QUE NO CUNDA EL PANICO.* Vale, necesito subir a cubierta para ver  que esta pasando. Hay tres puertas, sin ningun cartel\n");
+	 
+	 
+	 
+ }
+ void juego1(){
+  int primero;
+	int puerta;
+	int salida;
+	int operacion, operacion2, operacion3;
+	int a,b,c,d;
+	
+		printf("¿Cual de todas las puertas sera? *Introduce numero de puerta, de la 1 a la 3*\n");
 	scanf("%i",&puerta);
 	
 	
@@ -151,9 +318,21 @@ else if(salida==2)
 			}
 		}
 	}
+
+
 }
+
 }
-}		
+
+
+
+}
+				
+				
+				
+				
+				
+				
 			}
 			
 			else if(puerta==1)
@@ -414,7 +593,14 @@ else if(salida==2)
 				printf("MECANICO: Perfecto, muchas gracias por tu ayuda");
 			}
 		}
-	}	
+	}
+
+
+
+
+			
+			
+			
 		}
 		else if(primero==5)
 		{
@@ -533,7 +719,12 @@ else if(salida==2)
 			}
 		}
 	}
+
+
 }
+
+			
+			
 			}
 		}//primero m
 		else if(primero==6)
@@ -541,6 +732,10 @@ else if(salida==2)
 			printf("Vale, vamos a revisar la estanteria, Veamos, hay un libro, una gorra y... BINGO! Aqui hay una llave, veamos mas puertas!\n");
 		}	
 		}
+
+
+
+
 		else if(puerta==3)
 	{
 		printf("Esto parece un camarote, voy a investigarlo\n");
@@ -688,9 +883,14 @@ else if(salida==2)
 				printf("MECANICO: Perfecto, muchas gracias por tu ayuda");
 			}
 		}
- }
+	}
+
+
 }
-   }
+
+			
+			
+			}
 		}//primero m
 		else if(primero==6)
 		{
@@ -802,164 +1002,26 @@ else if(salida==2)
 			}
 		}
 	}
+
+
 }
+
+			
+			
 		}//primero e
 		}//puerta 4
+	
+
+	
+
+	
+
 return 0;
 }
 }
 }
-});
- void snake();
- void texto1 ();
- void ahorcado();
- void texto2 ();
- void coches();
- void texto3 ();
- void texto4 ();
-
-
-
-int main()
-{
-    char a;
-    char b;
-    char usuario [30];
-    char contrase [30];
-    FILE *iniciosesion;
-     char nombre [30];
-    int fecha ;
-    FILE *iniciosesionfecha;
-     char registronombre [30];
-    char contrasena[30] ;
-    FILE *registro;
-    int elegir;
-    elegir=0;
-    printf("Elige entre las opciones introduciendo el numero de delante\n");
-    printf("1 Iniciar sesion con el email \n ");
-    printf("2 Iniciar sesion con fecha y nombre \n");
-    printf("3 Registrarse\n");
-    printf("Opcion:");
-    scanf("%i", &elegir);
-    switch (elegir)
-    {
-    case 1://Iniciar sesion
-
-
-    iniciosesion=fopen ("INICIOSESION.txt", "a");
-    printf ("introduzca su usuario\n");
-    scanf ("%s", usuario);
-    printf("introduzca su contrasena\n");
-    scanf ("%s", contrase);
-    fprintf (iniciosesion, "USUARIO\n CONTRASEÑA\t");
-    fprintf(iniciosesion, "%s\n", usuario);
-    fprintf(iniciosesion, "%s", contrase);
-
-    fclose (iniciosesion);
-
-    printf("¿Que quieres hacer? \n");
-    printf("1 Salir. \n");
-    printf("2 Jugar. \n");
-    
-    scanf("%i", &elegir);
-
-
-            switch (elegir)
-                {
-                case 1://Salir
-                elegir=0;
-
-                break;
-
-                case 2://Jugar
-                elegir=0;
-                printf("Eres un detective en colombia.");
-               introduccion();
-     juego1();
-    texto1();
-     snake();
-    texto2();
-     ahorcado();
-    texto3();
-     coches();
-    texto4();
-
-                break;
-
-
-            }
-            break;
-
-            case 2:
-
-
-    iniciosesionfecha=fopen ("INICIOSESIONfecha.txt", "a");
-    printf ("introduzca su nombre\n");
-    scanf ("%s", nombre);
-    printf("introduzca su fecha de nacimiento sin guiones ni espacios (diamesaño)\n");
-    scanf ("%s", fecha);
-    fprintf (iniciosesionfecha, "USUARIO\n FECHA\t");
-    fprintf(iniciosesionfecha, "%s\n", nombre);
-    fprintf(iniciosesionfecha, "%i", fecha);
-
-    fclose (iniciosesionfecha);
-            //Se supone que aquí te lo verifica y tal pero es con ficheros y no se jajaja
-            printf("¿Que quieres hacer? \n");
-            printf("1 Salir. \n");
-            printf("2 Jugar. \n");
-
-            scanf("%i", &elegir);
-
-
-            switch (elegir)
-                {
-                case 1://Salir
-                elegir=0;
-
-                break;
-
-                case 2://Jugar
-                elegir=0;
-                printf("Eres un detective en colombia.");
-               introduccion();
-     juego1();
-    texto1();
-     snake();
-    texto2();
-     ahorcado();
-    texto3();
-     coches();
-    texto4();
-                break;
-
-            }
-        break;
-
-
-    case 3://Registrarse
-    elegir=0;
-    printf ("Registarse\n");
-
-    registro=fopen ("Registro.txt", "a");
-    printf ("introduzca su nombre\n");
-    scanf ("%s", registronombre);
-    printf("introduzca contraseña\n");
-    scanf ("%s", contrasena);
-    fprintf (registro, "USUARIO\n CONTRASEÑA\t");
-    fprintf(registro, "%s\n", registro);
-    fprintf(registro, "%i", contrasena);
-
-    fclose (registro);
-    return 0;
-
-
 }
-    }
- void introduccion(){
- 
- }
- void juego1(){
-     
+	  
  }
  void snake(){
      
