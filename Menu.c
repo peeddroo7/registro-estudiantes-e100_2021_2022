@@ -34,7 +34,7 @@ int main()
     printf("¿Que quieres hacer? \n");
     printf("1 Salir. \n");
     printf("2 Jugar. \n");
-    printf("3 Estadisticas. \n");
+   
     scanf("%i", &elegir);
 
     
@@ -51,11 +51,7 @@ int main()
 
                 break;
 
-                case 3://Estadisticas
-                elegir=0;
-                printf("Sabias que tienes mas brazos que la media." );
-
-                break;
+            
             }
             break;
 
@@ -69,7 +65,7 @@ int main()
             printf("¿Que quieres hacer? \n");
             printf("1 Salir. \n");
             printf("2 Jugar. \n");
-            printf("3 Estadisticas. \n");
+         
             scanf("%i", &elegir);
 
     
@@ -85,11 +81,6 @@ int main()
                 printf("Eres un detective en colombia.");
                 break;
 
-                case 3://Estadisticas
-                elegir=0;
-                printf("Sabias que tienes mas brazos que la media." );
-
-                break;
             }
         break;
     
@@ -114,7 +105,7 @@ int main()
             printf("¿Que quieres hacer? \n");
             printf("1 Salir. \n");
             printf("2 Jugar. \n");
-            printf("3 Estadisticas. \n");
+        
             scanf("%i", &elegir);
             switch (elegir)
             {
@@ -128,11 +119,7 @@ int main()
             printf("Eres un detective y te van a follar en colombia.");
                 break;
 
-            case 3://Estadisticas
-            elegir=0;
-            printf("Sabias que tienes mas brazos que la media." );
 
-                break;
             }
         break;
         
