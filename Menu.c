@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+ void introduccion();
+ void juego1();
+ void snake();
+ void ahorcado();
+ void coches();
+
+
 int main()
 {
     char a;
@@ -40,7 +47,11 @@ int main()
     printf("¿Que quieres hacer? \n");
     printf("1 Salir. \n");
     printf("2 Jugar. \n");
-
+    // introduccion();
+    // juego1();
+    // snake();
+    // ahorcado();
+    // coches();
     scanf("%i", &elegir);
 
 
@@ -117,3 +128,19 @@ int main()
 
 }
     }
+ void introduccion(){
+ 
+ }
+ void juego1(){
+     
+ }
+ void snake(){
+     
+ }
+ void ahorcado(){
+     
+ }
+ void coches(){
+     
+ }
+
