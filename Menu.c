@@ -9,7 +9,7 @@ void introduccion();
  void coches();
  void texto3 ();
  void texto4 ();
-
+void cerdo
 
 
 int main()
