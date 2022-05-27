@@ -116,7 +116,7 @@ int main()
             
             case 2://Jugar
             elegir=0;
-            printf("Eres un detective y te van a follar en colombia.");
+            printf("Eres un detective y te van a curtir en colombia.");
                 break;
 
 
