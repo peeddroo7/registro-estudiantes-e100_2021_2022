@@ -38,7 +38,7 @@ int main()
     case 1://Iniciar sesion
 
 
-    iniciosesion=fopen ("INICIOSESION.txt", "w");
+    iniciosesion=fopen ("INICIOSESION.txt", "a");
     printf ("introduzca su usuario\n");
     scanf ("%s", usuario);
     printf("introduzca su contrasena\n");
@@ -85,7 +85,7 @@ int main()
             case 2:
 
 
-    iniciosesionfecha=fopen ("INICIOSESIONfecha.txt", "w");
+    iniciosesionfecha=fopen ("INICIOSESIONfecha.txt", "a");
     printf ("introduzca su nombre\n");
     scanf ("%s", nombre);
     printf("introduzca su fecha de nacimiento sin guiones ni espacios (diamesaño)\n");
@@ -132,7 +132,7 @@ int main()
     elegir=0;
     printf ("Registarse\n");
 
-    registro=fopen ("Registro.txt", "w");
+    registro=fopen ("Registro.txt", "a");
     printf ("introduzca su nombre\n");
     scanf ("%s", registronombre);
     printf("introduzca contraseña\n");
