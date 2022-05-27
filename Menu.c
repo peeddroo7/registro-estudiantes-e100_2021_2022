@@ -52,11 +52,7 @@ int main()
     printf("¿Que quieres hacer? \n");
     printf("1 Salir. \n");
     printf("2 Jugar. \n");
-    // introduccion();
-    // juego1();
-    // snake();
-    // ahorcado();
-    // coches();
+    
     scanf("%i", &elegir);
 
 
@@ -76,7 +72,7 @@ int main()
      snake();
     texto2();
      ahorcado();
-    texto3()
+    texto3();
      coches();
     texto4();
 
@@ -123,7 +119,7 @@ int main()
      snake();
     texto2();
      ahorcado();
-    texto3()
+    texto3();
      coches();
     texto4();
                 break;
